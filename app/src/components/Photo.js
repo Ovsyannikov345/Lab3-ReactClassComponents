@@ -7,7 +7,7 @@ class Photo extends React.Component {
         super(props);
         this.props = props;
     }
-    
+
     render() {
         return (
             <div className='Photo'>

@@ -1,4 +1,5 @@
 import React from 'react';
+
 import '../styles/SearchBar.css';
 
 class SearchBar extends React.Component {
@@ -47,7 +48,7 @@ class SearchBar extends React.Component {
     }
 
     render() {
-        return <div className="search-container">
+        return <div className="SearchBar">
             <input
                 type="search"
                 ref={ref => (this.inputRef = ref)}
