@@ -10,18 +10,16 @@ class Gallery extends React.Component {
     }
     
     render() {
-        let noPhotosMessage = <></>;
+        const photos = this.props.images.map(image =>
+            <Photo currentImage={image} key={image.id}/>
+        );
 
-        if (this.props.images.length === 0) {
-            noPhotosMessage = <p>No photos</p>;
-        }
+        const message = this.props.images.length === 0 ? <p>No photos</p> : <></>;
 
         return (
             <div className='gallery'>
-                {noPhotosMessage}
-                {this.props.images.map(image =>
-                    <Photo currentImage={image} key={image.id}/>
-                )}
+                {photos}
+                {message}
             </div>
         )
     }
