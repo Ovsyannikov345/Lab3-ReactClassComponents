@@ -4,6 +4,7 @@ import SearchBar from './SearchBar';
 
 import '../styles/App.css';
 import Gallery from './Gallery';
+import Footer from './Footer';
 
 class App extends React.Component {
     constructor() {
@@ -24,6 +25,7 @@ class App extends React.Component {
                     <SearchBar updateGallery={this.updateGallery} />
                     <Gallery images={this.state.images} />
                 </main>
+                <Footer />
             </>
         )
     }
