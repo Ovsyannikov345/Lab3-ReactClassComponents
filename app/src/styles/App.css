@@ -1,3 +1,9 @@
 main {
+    margin-top: 40px;
     padding: 0px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 40px;
+    align-items: center;
 }

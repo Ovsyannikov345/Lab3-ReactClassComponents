@@ -1,23 +1,29 @@
 .SearchBar {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    width: 50%;
 }
 
 #search-input {
-    background-color: #EDF5E1;
+    background-color: #edf5e1;
     flex-grow: 1;
     padding: 10px;
     font-size: 16px;
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 5px;
+}
+
+#search-input:focus {
+    outline: none;
+    border-color: #000000ad;
 }
 
 #search-button {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #05386B;
-    color: #EDF5E1;
+    text-transform: capitalize;
+    background-color: #f64c72;
+    color: white;
     border: none;
     border-radius: 5px;
     margin-left: 10px;
@@ -30,7 +36,7 @@
 
 #search-input::-webkit-search-cancel-button {
     content: "×";
-    color: #999;
+    background-color: #f64c72;
     font-size: 16px;
 }
 
